@@ -1,0 +1,58 @@
+.Banner {
+  background-image: url("https://wallpaperaccess.com/full/2703652.png");
+  background-size: cover;
+  height: 35rem;
+  position: relative;
+}
+.Banner::after {
+  content: "";
+  background: linear-gradient(
+      to bottom right,
+      black,
+      50%,
+      rgba(0, 0, 0, 0),
+      black
+    ),
+    linear-gradient(to top, rgb(0, 0, 0), 10%, rgba(0, 0, 0, 0));
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+.Banner .Content {
+  position: relative;
+  z-index: 11;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 30px;
+}
+.Banner .MainTitle {
+  font-family: "Rubik Bubbles", cursive;
+}
+.Banner .Content .Buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.Banner .Content .Buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.681);
+}
+.Banner .Content .Buttons button:hover {
+  background-color: rgb(219, 219, 219);
+}
+.Banner .Content .Buttons button:nth-child(1) {
+  background-color: white;
+}

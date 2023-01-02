@@ -1,0 +1,14 @@
+.NavBar {
+  position: fixed;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.NavBar img {
+  height: 35px;
+}
