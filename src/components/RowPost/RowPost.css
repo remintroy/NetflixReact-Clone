@@ -1,0 +1,15 @@
+.RowPost {
+  padding: 15px 30px;
+  width: 100%;
+}
+.RowPost .ImgCont {
+  overflow-x: scroll;
+  display: flex;
+  gap: 15px;
+}
+.RowPost .ImgCont img {
+  width: 300px;
+}
+.RowPost .ImgCont::-webkit-scrollbar {
+  display: none;
+}
