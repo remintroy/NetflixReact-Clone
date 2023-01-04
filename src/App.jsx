@@ -4,7 +4,7 @@ import "./App.css";
 import Banner from "./components/Banner/Banner";
 import RowPost from "./components/RowPost/RowPost";
 
-import { genre, genreRowUrl, IMG_URL } from "./const";
+import { genre, GENRE_ROW_URL, IMG_URL, TRENDING_ROW_URL } from "./const";
 import axois from "./axois";
 
 function App() {
@@ -24,16 +24,20 @@ function App() {
     innerFunction();
   }, []);
 
+
   return (
     <div>
       <Navbar />
       <Banner url={`${IMG_URL}`} />
 
+      
+
+      <RowPost url={TRENDING_ROW_URL} title={"Trending Movies"} key={100} />
       {genreData.map((genre, index) => {
         // console.log(genreRowUrl+genre.id)
         return (
           <RowPost
-            url={genreRowUrl + genre.id}
+            url={GENRE_ROW_URL + genre.id}
             title={genre.name}
             isSmall={"true"}
             key={index}

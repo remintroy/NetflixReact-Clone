@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Banner.css";
 import axois from "../../axois";
-import { IMG_ORGIN } from "../../const";
+import { IMG_ORGIN_BANNER } from "../../const";
 
 function Banner({ url }) {
   //..
@@ -33,7 +33,7 @@ function Banner({ url }) {
       className="Banner row m-0 p-0"
       style={{
         backgroundImage: `url(${
-          data?.backdrop_path ? IMG_ORGIN + data.backdrop_path : ""
+          data?.backdrop_path ? IMG_ORGIN_BANNER + data.backdrop_path : ""
         })`,
       }}
     >

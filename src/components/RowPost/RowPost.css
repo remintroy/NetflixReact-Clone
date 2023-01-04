@@ -9,7 +9,28 @@
 }
 .RowPost .ImgCont img {
   width: 300px;
+  cursor: pointer;
 }
 .RowPost .ImgCont::-webkit-scrollbar {
   display: none;
+}
+.RowPost .ImgCont .ImgCover {
+  position: relative;
+}
+.RowPost .ImgCont .ImgCover .ShowTrailer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  filter: opacity(0);
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.542);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.RowPost .ImgCont .ImgCover:hover .ShowTrailer {
+  filter: opacity(100%);
 }
